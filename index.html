@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Talk Facilities | Australia's #1 Facilities Management Podcast</title>
+    <meta name="description" content="Let's Talk Facilities is Australia's leading podcast exploring the world of facility management. Proudly sponsored by Premrest - Australia's go-to for commercial floor care.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-lets">Let's Talk</span>
+                <span class="logo-facilities">Facilities</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="watch.html" class="nav-link">Watch</a>
+                <a href="#episodes" class="nav-link">Episodes</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#listen" class="nav-link cta-link">Listen Now</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                Australia's #1 FM Podcast
+            </div>
+            <h1 class="hero-title animate-in">
+                <span class="title-line-1">Let's Talk</span>
+                <span class="title-line-2">Facilities</span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                Real conversations with the people shaping Australia's facility management industry. New episodes fortnightly.
+            </p>
+            <div class="hero-actions animate-in">
+                <a href="watch.html" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    Watch Latest Episode
+                </a>
+                <a href="#listen" class="btn btn-secondary">
+                    Subscribe
+                </a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <span class="stat-number">13+</span>
+                    <span class="stat-label">Episodes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">12+</span>
+                    <span class="stat-label">Industry Guests</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">#1</span>
+                    <span class="stat-label">FM Podcast in AU</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual animate-in">
+            <div class="hero-video-card">
+                <div class="video-card-glow"></div>
+                <iframe
+                    src="https://www.youtube.com/embed/A6l3XkNsIsY?enablejsapi=1&rel=0&modestbranding=1"
+                    title="Latest Episode"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vertical Video Carousel Section -->
+    <section class="shorts-section" id="episodes">
+        <div class="section-header">
+            <div class="section-tag animate-on-scroll">Latest Episodes</div>
+            <h2 class="section-title animate-on-scroll">Swipe Through <span class="text-accent">Episodes</span></h2>
+            <p class="section-desc animate-on-scroll">Watch bite-sized highlights and full episodes. Scroll to explore.</p>
+        </div>
+        <div class="carousel-container">
+            <button class="carousel-arrow carousel-arrow-left" id="carouselLeft" aria-label="Previous">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="shorts-carousel" id="shortsCarousel">
+                <div class="short-card" data-video-id="A6l3XkNsIsY">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/A6l3XkNsIsY/maxresdefault.jpg" alt="What It Takes to Run an Award-Winning Podcast" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>What It Takes to Run an Award-Winning Podcast</h3>
+                        <span class="short-date">Apr 2026</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="fpfJYE5dxzc">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/fpfJYE5dxzc/maxresdefault.jpg" alt="Drawing the Line between Facility and Asset Management" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Drawing the Line between Facility and Asset Management</h3>
+                        <span class="short-guest">with Ujwal Lakra</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="YlERV0PrMZ0">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/YlERV0PrMZ0/maxresdefault.jpg" alt="Growing in FM" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Growing in FM</h3>
+                        <span class="short-guest">with Arbab Shah</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="WSZQSTNCk4Q">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/WSZQSTNCk4Q/maxresdefault.jpg" alt="Facilities with Purpose" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Facilities with Purpose</h3>
+                        <span class="short-guest">with Paul Sor</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="L36MOxBUJRk">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/L36MOxBUJRk/maxresdefault.jpg" alt="A Better Way to Build" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <span class="short-badge">Special</span>
+                        <h3>A Better Way to Build</h3>
+                        <span class="short-guest">with Dave Moolman</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="V7JBFtjz7Ao">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/V7JBFtjz7Ao/maxresdefault.jpg" alt="Sustainability That Pays Off" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Sustainability That Pays Off</h3>
+                        <span class="short-guest">with Lauren Hamilton</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="N1QQ2NglWys">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/N1QQ2NglWys/maxresdefault.jpg" alt="Designing Workplace Strategy" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Designing Workplace Strategy</h3>
+                        <span class="short-guest">with Dr Agustin Chevez</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="-2XgtIDePPQ">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/-2XgtIDePPQ/maxresdefault.jpg" alt="Building a Circular Future" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <span class="short-badge">Special</span>
+                        <h3>Building a Circular Future</h3>
+                        <span class="short-guest">with Paul Rosenberg Vella</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="NbVuBMmE1Wo">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/NbVuBMmE1Wo/maxresdefault.jpg" alt="Why Emergency Management Matters" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Why Emergency Management Matters for FM</h3>
+                        <span class="short-guest">with Gaurav Bhalla</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="qMGd9rqCoIM">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/qMGd9rqCoIM/maxresdefault.jpg" alt="Values-Driven FM" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Values-Driven Facilities Management</h3>
+                        <span class="short-guest">with Mark O'Connell</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="QXelsqxoLrw">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/QXelsqxoLrw/maxresdefault.jpg" alt="Mentorship, Diversity, and the Future of FM" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Mentorship, Diversity, and the Future of FM</h3>
+                        <span class="short-guest">with Leah Ong</span>
+                    </div>
+                </div>
+                <div class="short-card" data-video-id="J_TI1f3caz8">
+                    <div class="short-video-wrapper">
+                        <img class="short-thumbnail" src="https://img.youtube.com/vi/J_TI1f3caz8/maxresdefault.jpg" alt="Facility Management is Changing" loading="lazy">
+                        <div class="short-play-overlay">
+                            <div class="play-btn-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="short-iframe-container"></div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Facility Management is Changing</h3>
+                        <span class="short-guest">with Duncan Waddell</span>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow carousel-arrow-right" id="carouselRight" aria-label="Next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-inner">
+            <div class="about-content animate-on-scroll">
+                <div class="section-tag">About the Podcast</div>
+                <h2 class="section-title">Conversations That <span class="text-accent">Shape</span> the Industry</h2>
+                <p>Let's Talk Facilities brings together facility management professionals, thought leaders, and innovators from across Australia to discuss the topics that matter most to our industry.</p>
+                <p>From sustainability and workplace strategy to emergency management and mentorship, every episode dives deep into the real challenges and opportunities facing today's facility managers.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div>
+                            <strong>Industry Leaders</strong>
+                            <span>Guests from across FM, sustainability, and workplace design</span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <div>
+                            <strong>Fortnightly Episodes</strong>
+                            <span>New conversations released every two weeks</span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Video & Audio</strong>
+                            <span>Available on YouTube, Spotify, Apple Podcasts & more</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual animate-on-scroll">
+                <div class="about-image-grid">
+                    <div class="about-img-card about-img-1">
+                        <img src="https://img.youtube.com/vi/V7JBFtjz7Ao/maxresdefault.jpg" alt="Podcast recording" loading="lazy">
+                    </div>
+                    <div class="about-img-card about-img-2">
+                        <img src="https://img.youtube.com/vi/N1QQ2NglWys/maxresdefault.jpg" alt="Interview session" loading="lazy">
+                    </div>
+                    <div class="about-img-card about-img-3">
+                        <img src="https://img.youtube.com/vi/QXelsqxoLrw/maxresdefault.jpg" alt="Guest conversation" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listen Section -->
+    <section class="listen-section" id="listen">
+        <div class="listen-inner">
+            <div class="section-tag animate-on-scroll">Subscribe</div>
+            <h2 class="section-title animate-on-scroll">Never Miss an <span class="text-accent">Episode</span></h2>
+            <p class="section-desc animate-on-scroll">Listen and watch wherever you get your podcasts.</p>
+            <div class="platform-grid animate-on-scroll">
+                <a href="https://www.youtube.com/playlist?list=PLMLI27bMPtHrw4TgptEyP8nRlmCutCFUS" target="_blank" rel="noopener" class="platform-card">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://open.spotify.com/show/lets-talk-facilities" target="_blank" rel="noopener" class="platform-card">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                    <span>Spotify</span>
+                </a>
+                <a href="https://podcasts.apple.com/podcast/lets-talk-facilities" target="_blank" rel="noopener" class="platform-card">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M5.34 0A5.328 5.328 0 000 5.34v13.32A5.328 5.328 0 005.34 24h13.32A5.328 5.328 0 0024 18.66V5.34A5.328 5.328 0 0018.66 0H5.34zm6.525 2.568c2.336 0 4.448.902 6.056 2.587 1.224 1.272 1.912 2.619 2.264 4.392.12.59.12 2.2.007 2.864a8.506 8.506 0 01-3.24 5.349c-.36.264-.396.276-.468.192-.036-.06-.396-.924-.792-1.920l-.72-1.824.264-.204c.744-.576 1.392-1.584 1.644-2.556.12-.468.156-1.488.06-1.932-.36-1.656-1.524-3.084-3.12-3.78-.6-.264-.876-.312-1.668-.348-.828-.036-1.2.012-1.812.24-1.62.6-2.832 2.004-3.228 3.732-.12.516-.096 1.692.048 2.16.324 1.056.9 1.884 1.764 2.544l.264.192-.348.888c-.192.492-.54 1.356-.768 1.932-.396.972-.42 1.02-.516.96a8.478 8.478 0 01-2.664-3.396c-.444-1.056-.588-1.74-.636-3.012-.036-.864.012-1.26.192-2.016.948-3.924 4.296-6.768 8.064-6.844.18 0 .396-.012.54-.012l.06.012zm-.12 4.332c1.296.168 2.448.9 3.18 2.028.384.588.636 1.188.756 1.848.072.348.072 1.26.012 1.608-.24 1.308-.924 2.328-2.076 3.06-.18.12-.336.216-.348.216-.024 0-.084-.132-.144-.3l-.66-1.62.36-.324c.588-.528.876-1.14.924-1.956.036-.444-.024-.748-.216-1.128-.36-.696-1.068-1.164-1.836-1.236-.876-.072-1.632.276-2.112.972-.264.384-.384.756-.396 1.26 0 .444.048.672.228 1.02.132.264.18.324.552.672l.372.348-.12.3c-.072.168-.336.828-.6 1.476-.264.648-.492 1.188-.504 1.2-.024.012-.204-.096-.396-.24-1.62-1.164-2.46-3.12-2.172-5.04.3-1.932 1.632-3.552 3.468-4.188.54-.18.876-.24 1.488-.264.18-.012.42 0 .24-.012zm.24 4.692c.48.168.804.492 1.02.984.084.192.096.276.096.636 0 .396 0 .432-.12.672-.192.384-.396.6-.756.78l-.168.084.072.396c.048.216.324 1.8.612 3.504.288 1.716.54 3.144.552 3.18.036.084-.036.096-.984.096-.504 0-.96-.012-.972-.024-.024-.024-1.272-6.564-1.272-6.672 0-.036-.048-.084-.108-.12-.192-.096-.312-.312-.384-.66-.036-.192-.036-.288.024-.504.132-.504.564-.876 1.056-.948.18-.024.192-.024.372.012l-.04.384z"/></svg>
+                    <span>Apple Podcasts</span>
+                </a>
+                <a href="https://music.youtube.com/playlist?list=PLMLI27bMPtHrw4TgptEyP8nRlmCutCFUS" target="_blank" rel="noopener" class="platform-card">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-13.332c-3.432 0-6.228 2.796-6.228 6.228S8.568 18.228 12 18.228 18.228 15.432 18.228 12 15.432 5.772 12 5.772zM9.684 15.54V8.46L15.816 12l-6.132 3.54z"/></svg>
+                    <span>YouTube Music</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsor Section -->
+    <section class="sponsor-section">
+        <div class="sponsor-inner">
+            <div class="sponsor-content animate-on-scroll">
+                <span class="sponsor-label">Proudly Sponsored By</span>
+                <a href="https://www.premrest.com.au" target="_blank" rel="noopener" class="sponsor-logo-link">
+                    <img src="https://cdn.prod.website-files.com/675661387278edf4cf92de17/6757bdd49466d54fb927e308_Premrest_Tagline_Charcoal-Orange.svg" alt="Premrest - Australia's go-to for commercial floor care" class="sponsor-logo">
+                </a>
+                <p class="sponsor-desc">Australia's go-to for commercial floor care. Premrest delivers expert cleaning, maintenance, and restoration services for facilities across the country.</p>
+                <a href="https://www.premrest.com.au" target="_blank" rel="noopener" class="btn btn-outline">Visit Premrest</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo-text">
+                        <span class="logo-lets">Let's Talk</span>
+                        <span class="logo-facilities">Facilities</span>
+                    </span>
+                    <p>Australia's #1 Facilities Management Podcast</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="index.html">Home</a>
+                        <a href="watch.html">Watch</a>
+                        <a href="#episodes">Episodes</a>
+                        <a href="#about">About</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Listen</h4>
+                        <a href="https://www.youtube.com/playlist?list=PLMLI27bMPtHrw4TgptEyP8nRlmCutCFUS" target="_blank" rel="noopener">YouTube</a>
+                        <a href="https://open.spotify.com/show/lets-talk-facilities" target="_blank" rel="noopener">Spotify</a>
+                        <a href="https://podcasts.apple.com/podcast/lets-talk-facilities" target="_blank" rel="noopener">Apple Podcasts</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="https://www.youtube.com/@premrest" target="_blank" rel="noopener">YouTube Channel</a>
+                        <a href="https://www.linkedin.com/company/premrest" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://www.instagram.com/premrest" target="_blank" rel="noopener">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Let's Talk Facilities. A <a href="https://www.premrest.com.au" target="_blank" rel="noopener">Premrest</a> Production.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch | Let's Talk Facilities</title>
+    <meta name="description" content="Browse and watch all episodes of Let's Talk Facilities - Australia's #1 FM podcast.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="watch-page">
+
+    <!-- Navigation -->
+    <nav class="nav nav-dark" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-lets">Let's Talk</span>
+                <span class="logo-facilities">Facilities</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="watch.html" class="nav-link active">Watch</a>
+                <a href="index.html#episodes" class="nav-link">Episodes</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#listen" class="nav-link cta-link">Listen Now</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Featured / Now Playing -->
+    <section class="watch-hero">
+        <div class="watch-hero-bg" id="watchHeroBg">
+            <img src="https://img.youtube.com/vi/A6l3XkNsIsY/maxresdefault.jpg" alt="" aria-hidden="true">
+            <div class="watch-hero-overlay"></div>
+        </div>
+        <div class="watch-hero-content">
+            <div class="watch-hero-player" id="watchPlayer">
+                <iframe
+                    id="mainPlayer"
+                    src="https://www.youtube.com/embed/A6l3XkNsIsY?enablejsapi=1&rel=0&modestbranding=1&autoplay=0"
+                    title="Now Playing"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="watch-hero-info">
+                <span class="watch-badge">Latest Episode</span>
+                <h1 id="watchTitle">What It Takes to Run an Award-Winning Podcast</h1>
+                <p id="watchDesc">Let's Talk Facilities explores the journey behind building an award-winning podcast in the facilities management space.</p>
+                <div class="watch-meta">
+                    <span class="watch-date">April 2026</span>
+                    <span class="watch-divider">&bull;</span>
+                    <span class="watch-series">Let's Talk Facilities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Rows (Netflix style) -->
+    <section class="watch-library">
+
+        <!-- All Episodes Row -->
+        <div class="watch-row">
+            <div class="watch-row-header">
+                <h2>All Episodes</h2>
+            </div>
+            <div class="watch-row-scroll">
+                <div class="watch-card" data-video-id="A6l3XkNsIsY" data-title="What It Takes to Run an Award-Winning Podcast" data-desc="Exploring what goes into creating and sustaining an award-winning podcast in the FM industry." data-date="April 2026">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/A6l3XkNsIsY/mqdefault.jpg" alt="What It Takes to Run an Award-Winning Podcast" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="watch-card-badge">New</span>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>What It Takes to Run an Award-Winning Podcast</h3>
+                        <span class="watch-card-date">Apr 2026</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="fpfJYE5dxzc" data-title="Drawing the Line between Facility and Asset Management" data-desc="Ujwal Lakra discusses the critical distinctions between facility management and asset management." data-date="December 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/fpfJYE5dxzc/mqdefault.jpg" alt="Drawing the Line between Facility and Asset Management" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Drawing the Line between Facility and Asset Management</h3>
+                        <span class="watch-card-meta">with Ujwal Lakra</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="YlERV0PrMZ0" data-title="Growing in FM" data-desc="Arbab Shah shares insights on career growth in the facilities management industry." data-date="December 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/YlERV0PrMZ0/mqdefault.jpg" alt="Growing in FM" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Growing in FM</h3>
+                        <span class="watch-card-meta">with Arbab Shah</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="WSZQSTNCk4Q" data-title="Facilities with Purpose" data-desc="Paul Sor discusses purpose-driven facility management and its impact on communities." data-date="November 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/WSZQSTNCk4Q/mqdefault.jpg" alt="Facilities with Purpose" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Facilities with Purpose</h3>
+                        <span class="watch-card-meta">with Paul Sor</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="V7JBFtjz7Ao" data-title="Sustainability That Pays Off" data-desc="Lauren Hamilton explains how sustainability initiatives can deliver real financial returns." data-date="October 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/V7JBFtjz7Ao/mqdefault.jpg" alt="Sustainability That Pays Off" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Sustainability That Pays Off</h3>
+                        <span class="watch-card-meta">with Lauren Hamilton</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="N1QQ2NglWys" data-title="Designing Workplace Strategy" data-desc="Dr Agustin Chevez shares his approach to workplace strategy and design thinking in FM." data-date="October 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/N1QQ2NglWys/mqdefault.jpg" alt="Designing Workplace Strategy" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Designing Workplace Strategy</h3>
+                        <span class="watch-card-meta">with Dr Agustin Chevez</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="NbVuBMmE1Wo" data-title="Why Emergency Management Matters for Facility Managers" data-desc="Gaurav Bhalla breaks down why emergency preparedness is crucial for every facility manager." data-date="September 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/NbVuBMmE1Wo/mqdefault.jpg" alt="Why Emergency Management Matters" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Why Emergency Management Matters for FM</h3>
+                        <span class="watch-card-meta">with Gaurav Bhalla</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="qMGd9rqCoIM" data-title="Values-Driven Facilities Management" data-desc="Mark O'Connell shares how values shape the way we manage facilities and lead teams." data-date="September 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/qMGd9rqCoIM/mqdefault.jpg" alt="Values-Driven FM" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Values-Driven Facilities Management</h3>
+                        <span class="watch-card-meta">with Mark O'Connell</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="QXelsqxoLrw" data-title="Mentorship, Diversity, and the Future of FM" data-desc="Leah Ong discusses the importance of mentorship and diversity in facilities management." data-date="August 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/QXelsqxoLrw/mqdefault.jpg" alt="Mentorship, Diversity, and the Future of FM" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Mentorship, Diversity, and the Future of FM</h3>
+                        <span class="watch-card-meta">with Leah Ong</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="J_TI1f3caz8" data-title="Facility Management is Changing" data-desc="Duncan Waddell explores the evolving landscape of facility management in Australia." data-date="August 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/J_TI1f3caz8/mqdefault.jpg" alt="Facility Management is Changing" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Facility Management is Changing</h3>
+                        <span class="watch-card-meta">with Duncan Waddell</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Episodes Row -->
+        <div class="watch-row">
+            <div class="watch-row-header">
+                <h2>Special Episodes</h2>
+            </div>
+            <div class="watch-row-scroll">
+                <div class="watch-card" data-video-id="L36MOxBUJRk" data-title="A Better Way to Build" data-desc="Dave Moolman shares innovative approaches to construction and building management." data-date="November 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/L36MOxBUJRk/mqdefault.jpg" alt="A Better Way to Build" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="watch-card-badge">Special</span>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>A Better Way to Build</h3>
+                        <span class="watch-card-meta">with Dave Moolman</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="-2XgtIDePPQ" data-title="Building a Circular Future" data-desc="Paul Rosenberg Vella discusses circular economy principles in facilities management." data-date="September 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/-2XgtIDePPQ/mqdefault.jpg" alt="Building a Circular Future" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="watch-card-badge">Special</span>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Building a Circular Future</h3>
+                        <span class="watch-card-meta">with Paul Rosenberg Vella</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="yEInKKIdWds" data-title="Sustainability with Aidan Mullan" data-desc="Aidan Mullan dives deep into practical sustainability strategies for facility managers." data-date="August 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/yEInKKIdWds/mqdefault.jpg" alt="Sustainability with Aidan Mullan" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="watch-card-badge">Special</span>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Sustainability</h3>
+                        <span class="watch-card-meta">with Aidan Mullan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topics Row: Sustainability -->
+        <div class="watch-row">
+            <div class="watch-row-header">
+                <h2>Sustainability &amp; Environment</h2>
+            </div>
+            <div class="watch-row-scroll">
+                <div class="watch-card" data-video-id="V7JBFtjz7Ao" data-title="Sustainability That Pays Off" data-desc="Lauren Hamilton explains how sustainability initiatives can deliver real financial returns." data-date="October 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/V7JBFtjz7Ao/mqdefault.jpg" alt="Sustainability That Pays Off" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Sustainability That Pays Off</h3>
+                        <span class="watch-card-meta">with Lauren Hamilton</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="-2XgtIDePPQ" data-title="Building a Circular Future" data-desc="Paul Rosenberg Vella discusses circular economy principles in facilities management." data-date="September 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/-2XgtIDePPQ/mqdefault.jpg" alt="Building a Circular Future" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Building a Circular Future</h3>
+                        <span class="watch-card-meta">with Paul Rosenberg Vella</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="yEInKKIdWds" data-title="Sustainability with Aidan Mullan" data-desc="Aidan Mullan dives deep into practical sustainability strategies for facility managers." data-date="August 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/yEInKKIdWds/mqdefault.jpg" alt="Sustainability" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Sustainability</h3>
+                        <span class="watch-card-meta">with Aidan Mullan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leadership & People Row -->
+        <div class="watch-row">
+            <div class="watch-row-header">
+                <h2>Leadership &amp; People</h2>
+            </div>
+            <div class="watch-row-scroll">
+                <div class="watch-card" data-video-id="qMGd9rqCoIM" data-title="Values-Driven Facilities Management" data-desc="Mark O'Connell shares how values shape the way we manage facilities." data-date="September 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/qMGd9rqCoIM/mqdefault.jpg" alt="Values-Driven FM" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Values-Driven Facilities Management</h3>
+                        <span class="watch-card-meta">with Mark O'Connell</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="QXelsqxoLrw" data-title="Mentorship, Diversity, and the Future of FM" data-desc="Leah Ong discusses the importance of mentorship and diversity." data-date="August 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/QXelsqxoLrw/mqdefault.jpg" alt="Mentorship, Diversity, and the Future of FM" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Mentorship, Diversity, and the Future of FM</h3>
+                        <span class="watch-card-meta">with Leah Ong</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="YlERV0PrMZ0" data-title="Growing in FM" data-desc="Arbab Shah shares insights on career growth in facilities management." data-date="December 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/YlERV0PrMZ0/mqdefault.jpg" alt="Growing in FM" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Growing in FM</h3>
+                        <span class="watch-card-meta">with Arbab Shah</span>
+                    </div>
+                </div>
+                <div class="watch-card" data-video-id="WSZQSTNCk4Q" data-title="Facilities with Purpose" data-desc="Paul Sor discusses purpose-driven facility management." data-date="November 2025">
+                    <div class="watch-card-thumb">
+                        <img src="https://img.youtube.com/vi/WSZQSTNCk4Q/mqdefault.jpg" alt="Facilities with Purpose" loading="lazy">
+                        <div class="watch-card-play">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="watch-card-info">
+                        <h3>Facilities with Purpose</h3>
+                        <span class="watch-card-meta">with Paul Sor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer watch-footer">
+        <div class="footer-inner">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Let's Talk Facilities. A <a href="https://www.premrest.com.au" target="_blank" rel="noopener">Premrest</a> Production. | <a href="index.html">Back to Home</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
