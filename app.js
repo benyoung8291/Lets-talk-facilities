@@ -248,6 +248,106 @@
     }
 
     // -------------------------
+    // Clips Carousel (second carousel on homepage)
+    // -------------------------
+    const clipsCarousel = document.querySelector('.clips-carousel');
+    const clipsArrowLeft = document.querySelector('.clips-arrow-left');
+    const clipsArrowRight = document.querySelector('.clips-arrow-right');
+
+    if (clipsCarousel) {
+        const clipsCards = clipsCarousel.querySelectorAll('.short-card');
+        let clipsActivePlayer = null;
+        let clipsActiveCard = null;
+
+        function pauseClipsVideo() {
+            if (clipsActivePlayer) {
+                try {
+                    clipsActivePlayer.contentWindow.postMessage(
+                        JSON.stringify({ event: 'command', func: 'pauseVideo' }), '*'
+                    );
+                } catch (e) { /* cross-origin */ }
+            }
+            if (clipsActiveCard) {
+                clipsActiveCard.classList.remove('is-playing', 'is-active');
+            }
+            clipsActivePlayer = null;
+            clipsActiveCard = null;
+        }
+
+        function playClipsCard(card) {
+            const videoId = card.dataset.videoId;
+            if (!videoId) return;
+            pauseClipsVideo();
+
+            const container = card.querySelector('.short-iframe-container');
+            let iframe = container.querySelector('iframe');
+            if (iframe) {
+                try {
+                    iframe.contentWindow.postMessage(
+                        JSON.stringify({ event: 'command', func: 'playVideo' }), '*'
+                    );
+                } catch (e) { /* cross-origin */ }
+            } else {
+                iframe = document.createElement('iframe');
+                iframe.src = `https://www.youtube.com/embed/${videoId}?enablejsapi=1&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+                iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                iframe.setAttribute('allowfullscreen', '');
+                iframe.setAttribute('frameborder', '0');
+                container.appendChild(iframe);
+            }
+
+            card.classList.add('is-playing', 'is-active');
+            clipsActivePlayer = iframe;
+            clipsActiveCard = card;
+        }
+
+        clipsCards.forEach(card => {
+            card.addEventListener('click', () => {
+                if (card === clipsActiveCard) {
+                    pauseClipsVideo();
+                } else {
+                    playClipsCard(card);
+                }
+            });
+        });
+
+        if (clipsArrowLeft) {
+            clipsArrowLeft.addEventListener('click', () => {
+                clipsCarousel.scrollBy({ left: -300, behavior: 'smooth' });
+            });
+        }
+        if (clipsArrowRight) {
+            clipsArrowRight.addEventListener('click', () => {
+                clipsCarousel.scrollBy({ left: 300, behavior: 'smooth' });
+            });
+        }
+
+        // Auto-pause clips when scrolling away
+        const clipsSection = document.querySelector('.clips-section');
+        if (clipsSection) {
+            const clipsSectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) pauseClipsVideo();
+                });
+            }, { threshold: 0.2 });
+            clipsSectionObserver.observe(clipsSection);
+        }
+
+        // Auto-pause clips on carousel scroll
+        let clipsScrollTimer = null;
+        clipsCarousel.addEventListener('scroll', () => {
+            if (clipsScrollTimer) clearTimeout(clipsScrollTimer);
+            clipsScrollTimer = setTimeout(() => {
+                if (!clipsActiveCard) return;
+                const rect = clipsCarousel.getBoundingClientRect();
+                const cardRect = clipsActiveCard.getBoundingClientRect();
+                const distance = Math.abs((cardRect.left + cardRect.width / 2) - (rect.left + rect.width / 2));
+                if (distance > rect.width * 0.4) pauseClipsVideo();
+            }, 150);
+        }, { passive: true });
+    }
+
+    // -------------------------
     // Watch Page: Card Click -> Load in Hero Player
     // -------------------------
     const watchCards = document.querySelectorAll('.watch-card');

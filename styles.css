@@ -758,6 +758,14 @@ h1, h2, h3, h4 {
     border-radius: 4px;
 }
 
+/* --- Clips Section --- */
+.clips-section {
+    padding: 80px 0;
+    text-align: center;
+    overflow: hidden;
+    background: var(--color-white);
+}
+
 /* --- About Section --- */
 .about-section {
     padding: 100px clamp(20px, 4vw, 60px);
